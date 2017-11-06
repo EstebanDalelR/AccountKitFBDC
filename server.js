@@ -12,11 +12,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 var csrf_guid = Guid.raw();
-const account_kit_api_version = '{{ACCOUNT_KIT_API_VERSION}}';
-const app_id = '{{FACEBOOK_APP_ID}}';
-const app_secret = '{{ACCOUNT_KIT_APP_SECRET}}';
-const me_endpoint_base_url = 'https://graph.accountkit.com/{{ACCOUNT_KIT_API_VERSION}}/me';
-const token_exchange_base_url = 'https://graph.accountkit.com/{{ACCOUNT_KIT_API_VERSION}}/access_token';
+const account_kit_api_version = 'v1.1';
+const app_id = '762534437275820';
+const app_secret = '880291d7aebee9e7c30559a5ceb4c07b';
+const me_endpoint_base_url = 'https://graph.accountkit.com/v1.1/me';
+const token_exchange_base_url = 'https://graph.accountkit.com/v1.1/access_token';
 
 function loadLogin() {
   return fs.readFileSync('dist/login.html').toString();
